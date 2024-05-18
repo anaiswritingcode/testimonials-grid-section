@@ -60,7 +60,7 @@ body {
   display: grid;
   place-content: center;
   gap: 2rem;
-  padding: 4rem 1.5rem 2rem;
+  padding: 4.5rem 1.5rem 2rem;
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #fff;
