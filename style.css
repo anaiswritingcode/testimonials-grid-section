@@ -74,22 +74,51 @@ body {
   gap: 1rem;
 }
 
-.grid > *:nth-child(1) {
+.grid > :nth-child(1) {
   background-color: var(--green);
 }
 
-.grid > *:nth-child(2) {
+.grid > :nth-child(2) {
   background-color: var(--sage-green);
 }
 
-.grid > *:nth-child(4) {
+.grid > :nth-child(4) {
   background-color: var(--dark-green);
 }
 
-.grid > *:nth-child(3),
-.grid > *:nth-child(5) {
+.grid > :nth-child(3),
+.grid > :nth-child(5) {
   color: var(--dark-green);
   background-color: #fff;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}
+
+.grid > :nth-child(1) {
+  grid-area: one;
+}
+
+.grid > :nth-child(2) {
+  grid-area: two;
+}
+
+.grid > :nth-child(3) {
+  grid-area: three;
+}
+
+.grid > :nth-child(4) {
+  grid-area: four;
+}
+
+.grid > :nth-child(5) {
+  grid-area: five;
 }
 
 /** Attribution **/
