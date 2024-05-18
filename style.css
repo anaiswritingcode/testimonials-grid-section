@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+html,
+body {
+  min-height: 100svh;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -40,4 +45,46 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/** General styles **/
+
+:root {
+  --light-green: #ecf4eb;
+  --green: #6a9360;
+  --sage-green: #4f6b49;
+  --dark-green: #1b2d17;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  padding: 4rem 1.5rem 2rem;
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #fff;
+  background-color: var(--light-green);
+}
+
+/** Attribution **/
+
+.attribution {
+  padding: 0.9rem 1.9rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--dark-green);
+  border-radius: 12.5rem;
+  background-color: #fff;
+}
+
+.attribution a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--sage-green);
+  transition: all ease 0.2s;
+}
+
+.attribution a:is(:hover, :focus) {
+  color: var(--green);
 }
