@@ -78,7 +78,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   grid-auto-columns: 1fr;
   grid-template-areas:
     "one"
@@ -86,11 +86,12 @@ body {
     "three"
     "four"
     "five";
-  max-width: 1100px;
+  max-width: 1110px;
 }
 
 @media (min-width: 675px) {
   .grid {
+    column-gap: 1.9rem;
     grid-auto-rows: repeat(4, 1fr);
     grid-template-areas:
       "one one"
@@ -146,6 +147,12 @@ body {
   border-radius: 0.5rem;
 }
 
+@media (min-width: 675px) {
+  .card {
+    padding: 1.5rem 2rem;
+  }
+}
+
 .card > :nth-child(2) {
   font-size: 1.27rem;
   line-height: 1.18;
@@ -153,6 +160,28 @@ body {
 
 .card > :nth-child(3) {
   opacity: 0.75;
+}
+
+.card:nth-child(1) {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 11%;
+}
+
+@media (min-width: 675px) {
+  .card:nth-child(1) {
+    background-position: top right 18%;
+  }
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+  font-weight: 600;
+}
+
+.card:nth-child(3) :nth-child(3),
+.card:nth-child(4) :nth-child(3) {
+  margin-top: 0.4rem;
 }
 
 .card__header {
