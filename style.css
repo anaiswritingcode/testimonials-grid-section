@@ -79,6 +79,7 @@ body {
     "three"
     "four"
     "five";
+  max-width: 1100px;
 }
 
 @media (min-width: 675px) {
