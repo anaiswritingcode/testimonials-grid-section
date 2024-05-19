@@ -145,6 +145,7 @@ body {
   gap: 1rem;
   padding: 1.5rem 2rem 2rem;
   border-radius: 0.5rem;
+  box-shadow: 2.8rem 3.5rem 2.5rem -3.5rem #1b2d173d;
 }
 
 @media (min-width: 675px) {
