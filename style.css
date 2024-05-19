@@ -70,8 +70,14 @@ body {
     rgba(230, 241, 198, 1) 0%,
     rgba(236, 244, 235, 1) 100%
   );
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+}
+
+@media (min-width: 972px) {
+  body {
+    background-attachment: fixed;
+  }
 }
 
 /** Grid **/
